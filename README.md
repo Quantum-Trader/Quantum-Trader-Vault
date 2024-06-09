@@ -1,14 +1,9 @@
 # Introduction
 
-Welcome to this step-by-step tutorial on leveraging Zero-Knowledge Machine Learning (ZKML) for volatility prediction to manage a liquidity position on Uniswap V3. In this guide, we will walk through the entire process required to set up, deploy, and maintain an intelligent liquidity management solution using Giza stack. By the end of this tutorial, you will have a functional system capable of optimizing your liquidity contributions based on predictive market analysis.
+Welcome to this step-by-step tutorial on leveraging Zero-Knowledge Machine Learning (ZKML) for volatility prediction to manage a liquidity position on Uniswap V3 and Enzymes. In this guide, we will walk through the entire process required to set up, deploy, and maintain an intelligent liquidity management solution using Giza stack. 
 
 The primary goal here is to use machine learning predictions to adjust your liquidity position dynamically in response to anticipated market volatility, thereby maximizing your potential returns and minimizing risks. This project combines concepts from decentralized finance (DeFi), machine learning, and blockchain privacy enhancements (specifically Zero-Knowledge Proofs) to create a liquidity providing strategy for Uniswap V3, one of the most popular decentralized exchanges.
 
-Note: This project constitutes a Proof of Concept and should not be deployed on a mainnet, since it's likely to underperform. When developing a production-grade liquidity management system, you should consider multiple factors, such as gas fees or impermanent loss. For an intorduction into the art of liquidity management on Uniswap V3, you can refer to the following articles:
-
-- [A Primer on Uniswap v3 Math: As Easy As 1, 2, v3](https://blog.uniswap.org/uniswap-v3-math-primer)
-- [[DeFi Math] Uniswap V3 Concentrated Liquidity](https://medium.com/@chaisomsri96/defi-math-uniswap-v3-concentrated-liquidity-bd87686b3ecf)
-- [Impermanent Loss in Uniswap V3](https://medium.com/auditless/impermanent-loss-in-uniswap-v3-6c7161d3b445)
 
 # 1. Uniswap V3 Overview
 
@@ -32,7 +27,7 @@ In this project we will use the volatility prediction to adjust the width of the
 
 ```
 DEV_PASSPHRASE="<YOUR-APE-ACCOUNT-PASSWORD>"
-SEPOLIA_RPC_URL="YOUR-RPC-URL"
+POLYGON_RPC_URL="YOUR-RPC-URL"
 ```
 
 We recommend using private RPCs but if you don't have one and want to use a public one, you can use `https://eth-sepolia.g.alchemy.com/v2/demo`
@@ -235,4 +230,8 @@ Congrats, you have just used an AI Agent to provide liquidity on a decentralized
 
 # 9. Conclusion
 
-In this tutorial, we learnt how to use the Giza SDK to create an AI Agent that automatically rebalances our Uniswap V3 LP position. The next steps would include iterating on the volatility prediction model and refining the rebalancing logic to improve the agent's performance.
+We used the Giza SDK to create an AI Agent that automatically rebalances our Uniswap V3 LP position. The next steps would include iterating on the volatility prediction model and refining the rebalancing logic to improve the agent's performance.
+<a><img src="https://github.com/Quantum-Trader/Quantum-Trader-FrontEnd/blob/main/public/Screenshot%20(103).png" alt="Desktop-1" border="0" /></a>
+
+Check out our live vault [here](https://app.enzyme.finance/vault/0x857c34d7bc5aef93dc05367af9136932195efa42/my-deposit?network=polygon).
+
